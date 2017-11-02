@@ -90,6 +90,12 @@ body {
 .reveal b {
   font-weight: bold; }
 
+.reveal hr {
+  border: 1px solid #a23;
+  width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
 .reveal em {
   font-style: italic; }
 
@@ -313,3 +319,5 @@ body {
 
 .reveal small code {
   vertical-align: baseline; }
+
+/*# sourceMappingURL=blood.css.map */
