@@ -87,6 +87,7 @@ body {
 
 .reveal hr {
   border: 1px solid #e7ad52;
+  background-color: #e7ad52;
   width: 80%;
   margin-top: 1rem;
   margin-bottom: 1rem; }
