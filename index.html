@@ -12,6 +12,9 @@
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
+        <!-- Graph plugin custom design -->
+        <link rel="stylesheet" href="css/custom/graphs.css">
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -30,8 +33,31 @@
 					<h4>Jonathan Ehrat, Mike Boss, Raphael Koch</h4>
 				</section>
 				<section>
-					<section>Slide 2</section>
-					<section>Slide 2.1</section>
+                    <section><h2>Number of clicks</h2></section>
+					<section>
+                        <h4>Touchpad</h4>
+                        <div id="graph-wrapper-touchpad">
+                            <div class="graph-info">
+                                <a href="javascript:void(0)" class="big-target">Big target</a>
+                                <a href="javascript:void(0)" class="medium-target">Medium Target</a>
+                                <a href="javascript:void(0)" class="small-target">Small Target</a>
+
+                                <a href="#" id="bars-touchpad"><span></span></a>
+                                <a href="#" id="lines-touchpad" class="active"><span></span></a>
+                            </div>
+
+                            <div class="graph-container">
+                                <div id="graph-lines-touchpad"></div>
+                                <div id="graph-bars-touchpad"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Touchscreen</h4>
+                    </section>
+                    <section>
+                        <h4>Mouse</h4>
+                    </section>
 				</section>
 				<section>
 					<section>Slide 3</section>
@@ -44,7 +70,14 @@
 		<script src="js/reveal.js"></script>
 		<script src="lib/js/jquery-3.2.1.min.js"></script>
 		<script src="js/hiddenCursor.js"></script>
-		<script src="plugin/flot/jquery.flot.min.js"></script>
+		<script src="plugin/flot/jquery.flot.js"></script>
+
+        <!-- Data for graphs-->
+        <script src="data/data-touchpad.js"></script>
+
+        <!-- Load Graphs-->
+        <script src="js/graph-loader.js"></script>
+        <script src="js/graph-toggle.js"></script>
 
 		<script>
 			// More info about config & dependencies:
